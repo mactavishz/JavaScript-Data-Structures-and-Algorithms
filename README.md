@@ -5,8 +5,8 @@
 ## Current Phase
 
 1. Stack
-2. Queue
 
 ## Note
 
 * Each Folder contain its source code and example
+* Code can directly run in Node
