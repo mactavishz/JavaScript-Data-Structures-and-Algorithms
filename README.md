@@ -5,6 +5,7 @@
 ## Current Phase
 
 1. Stack
+2. Queue
 
 ## Note
 
