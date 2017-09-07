@@ -1,6 +1,6 @@
 const Stack = require("../Stack")
 
-function radixConverter(num,radix) {
+function radixConverter(num, radix) {
   var remStack = new Stack(),
       rem,
       baseString = '',
