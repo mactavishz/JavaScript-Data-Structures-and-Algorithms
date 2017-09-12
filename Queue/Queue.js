@@ -6,7 +6,7 @@ module.exports = class Queue {
     this.items.push(ele)
   }
   dequeue(ele) {
-    this.items.shift(ele)
+    return this.items.shift(ele)
   }
   front() {
     return this.items[0]
