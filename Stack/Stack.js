@@ -1,4 +1,4 @@
-module.exports = class Stack {
+class Stack {
   constructor() {
     this.items = []
   }
@@ -24,3 +24,5 @@ module.exports = class Stack {
     console.log(this.items)
   }
 }
+
+module.exports = Stack
