@@ -3,9 +3,10 @@ const insertNode = require('./util/insertNode')
 const inOrderTraverseNode = require('./util/inOrderTraverseNode')
 const preOrderTraverseNode = require('./util/preOrderTraverseNode')
 const postOrderTraverseNode = require('./util/postOrderTraverseNode')
-const minNode = require('./util/minNode')
-const maxNode = require('./util/maxNode')
+const minNodeKey = require('./util/minNodeKey')
+const maxNodeKey = require('./util/maxNodeKey')
 const searchNode = require('./util/searchNode')
+const removeNode = require('./util/removeNode')
 
 class BinarySearchTree {
   constructor() {
@@ -33,9 +34,12 @@ class BinarySearchTree {
     postOrderTraverseNode(this.root, callback)
   }
   min() {
-    return minNode(this.root)
+    return minNodeKey(this.root)
   }
   max() {
-    return mindNode(this.maxNode)
+    return maxNodeKey(this.maxNodeKey)
+  }
+  remove(key) {
+    root = removeNode(this.root, key)
   }
 }
