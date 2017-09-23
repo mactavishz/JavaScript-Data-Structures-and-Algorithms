@@ -8,6 +8,7 @@
 2. Queue
 3. Linked List
 4. BinarySearchTree
+5. Sort&Search
 
 ## Note
 
