@@ -1,4 +1,9 @@
-// time complexity O(n^2)
+const swap = require('./util/swap')
+
+// Time complexity O(n^2)
+// best-case: O(n^2)
+// worst-case: O(n^2)
+// average: O(n^2)
 function bubbleSort(arr) {
   var len = arr.length
   for(let i = 0; i < len; i++) {
@@ -10,10 +15,4 @@ function bubbleSort(arr) {
       }
     }
   }
-}
-
-function swap(arr, i, j) {
-  var temp = arr[i]
-  arr[i] = arr[j]
-  arr[j] = temp
 }
