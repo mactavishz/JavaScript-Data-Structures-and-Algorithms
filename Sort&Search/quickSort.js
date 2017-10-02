@@ -40,3 +40,5 @@ function partition(array, left, right) {
   }
   return left
 }
+
+module.exports = quickSort
