@@ -1,4 +1,4 @@
-const Node = require('./Node')
+const Node = require('./util/Node')
 
 class LinkedList {
   constructor() {
@@ -93,6 +93,9 @@ class LinkedList {
   }
   size() {
     return this.length
+  }
+  isEmpty() {
+    return this.size() === 0
   }
   getHead() {
     return this.head
