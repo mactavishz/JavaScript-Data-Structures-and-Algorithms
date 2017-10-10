@@ -1,0 +1,8 @@
+const UNDISCOVERED = 0
+const DISCOVERED = 1
+const EXPLORED = 2
+module.exports = {
+  UNDISCOVERED,
+  DISCOVERED,
+  EXPLORED
+}
