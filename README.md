@@ -11,7 +11,8 @@
 5. Set
 6. Dictionary
 7. HashTable
-8. Sort&Search
+8. Graph
+9. Sort&Search
 
 ## Note
 
