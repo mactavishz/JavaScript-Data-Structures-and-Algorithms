@@ -4,8 +4,7 @@ const swap = require('./util/swap')
 // best-case: O(nlog(n))
 // worst-case: O(n^2)
 // average: O(nlog(n))
-//
-// implement insertSort without using swap function
+
 function quickSort(array, left = 0, right = arr.length - 1) {
   var index
   if(array.length > 1) {
