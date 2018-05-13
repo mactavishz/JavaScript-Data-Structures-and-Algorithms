@@ -5,29 +5,39 @@ const swap = require('./util/swap')
 // worst-case: O(n^2)
 // average: O(nlog(n))
 
-function quickSort(array, left = 0, right = arr.length - 1) {
-  var index
-  if(array.length > 1) {
-    index = partition(array, left, right)
+function quickSort(arr, compare) {
+  if (!compare) {
+    compare = (a, b) => a - b
+  }
+  return sort.call(arr, 0, arr.length - 1, compare)
+}
+
+function sort(left, right, compare) {
+  let index, len = this.length
+	
+  if(len > 1) {
+    index = partition(this, left, right, compare)
 
     if(left < index - 1) {
-      quickSort(array, left, index - 1)
+      sort.call(this, left, index - 1, compare)
     }
 
     if(left < right) {
-      quickSort(array, index, right)
+      sort.call(this, index, right, compare)
     }
   }
+
+  return this
 }
 
-function partition(array, left, right) {
-  var pivot = array[Math.floor((left + right) / 2)]
+function partition(array, left, right, compare) {
+  let pivot = array[Math.floor((left + right) / 2)]
 
   while(left <= right) {
-    while(array[left] < pivot) {
+    while(compare(array[left], pivot) < 0) {
       left++
     }
-    while(array[right] > pivot) {
+    while(compare(array[right], pivot) > 0) {
       right--
     }
 
